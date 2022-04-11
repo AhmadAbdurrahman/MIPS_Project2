@@ -1,0 +1,16 @@
+# program: 1000 char string
+# N = 31
+# M = 21
+
+.data
+user_string: .space 1001
+error: .asciiz "Not Recognized"
+.text
+
+main:
+
+li $v0, 8
+la $a0, user_string   
+li $a1, 1001
+syscall
+la $s0, user_string
