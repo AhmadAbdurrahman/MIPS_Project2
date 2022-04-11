@@ -59,3 +59,9 @@ bgt $t1, $t3, ifAU
 sub $t1, $t1,$t2
 sub $t4,$a0,$t0
 li $t5, 1
+
+exp09:
+beq $t4,1, else09
+mul $t5,$t5,$a2
+addi $t4,$t4, -1
+j exp09
