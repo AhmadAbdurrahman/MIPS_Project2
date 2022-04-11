@@ -39,3 +39,9 @@ move $s3,$v0
 li $v0,1
 addi $a0,$s3,0
 syscall
+
+j exit
+
+string2deci:
+li $t0, 0
+li $v0,0
