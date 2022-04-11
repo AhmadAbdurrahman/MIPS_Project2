@@ -118,3 +118,12 @@ add $v0,$v0,$t5
 addi $a1,$a1,1
 addi $t0,$t0,1
 j loop
+
+validchars:
+jr $ra
+
+invalidchars:
+la $a0, error
+li $v0,4
+syscall 
+j exit
