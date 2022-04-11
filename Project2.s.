@@ -49,3 +49,9 @@ li $v0,0
 loop:
 lb $t1,0($a1)
 beq $t0,$a0,validchars
+
+if09:
+li $t2,'0'
+li $t3, '9'
+blt $t1, $t2,invalidchars
+bgt $t1, $t3, ifAU
