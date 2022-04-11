@@ -23,3 +23,8 @@ move $a0,$s1
 move $a1, $s0
 jal removeleadspace
 move $s0,$v0
+
+move $a0,$s2
+addi $a1, $s1, 0
+jal removeendspace
+addi $s2, $v0, 0
