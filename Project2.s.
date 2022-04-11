@@ -78,3 +78,7 @@ li $t2, 'A'
 li $t3,'U'
 blt $t1,$t2,invalidchars
 bgt $t1,$t3,ifau
+
+addi $t1,$t1, -55
+sub $t4,$a0,$t0
+li $t5,1
