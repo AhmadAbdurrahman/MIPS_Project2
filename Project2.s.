@@ -95,3 +95,9 @@ add $v0,$v0,$t5
 addi $a1,$a1,1
 addi $t0,$t0,1
 j loop
+
+ifau:
+li $t2,'a'
+li $t3,'u'
+blt $t1,$t2,invalidchars
+bgt $t1,$t3, invalidchars
