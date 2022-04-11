@@ -101,3 +101,7 @@ li $t2,'a'
 li $t3,'u'
 blt $t1,$t2,invalidchars
 bgt $t1,$t3, invalidchars
+
+addi $t1,$t1, -87
+sub $t4,$a0,$t0
+li $t5,1
