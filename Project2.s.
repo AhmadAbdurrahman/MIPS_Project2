@@ -14,3 +14,7 @@ la $a0, user_string
 li $a1, 1001
 syscall
 la $s0, user_string
+
+jal strlength
+addi $s1, $v0, 0
+addi $s2, $v1, 0
