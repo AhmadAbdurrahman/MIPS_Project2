@@ -82,3 +82,9 @@ bgt $t1,$t3,ifau
 addi $t1,$t1, -55
 sub $t4,$a0,$t0
 li $t5,1
+
+expAU:
+beq $t4,1,elseAU
+mul $t5,$t5,$a2
+addi $t4,$t4, -1
+j expAU
