@@ -28,3 +28,8 @@ move $a0,$s2
 addi $a1, $s1, 0
 jal removeendspace
 addi $s2, $v0, 0
+
+bgt $s1,4, invalidchars
+addi $a0,$s1, 0
+move $a1, $s0
+li $a2, 31
