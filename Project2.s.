@@ -45,3 +45,7 @@ j exit
 string2deci:
 li $t0, 0
 li $v0,0
+
+loop:
+lb $t1,0($a1)
+beq $t0,$a0,validchars
