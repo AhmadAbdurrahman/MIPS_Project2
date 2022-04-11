@@ -33,3 +33,9 @@ bgt $s1,4, invalidchars
 addi $a0,$s1, 0
 move $a1, $s0
 li $a2, 31
+
+jal string2deci
+move $s3,$v0
+li $v0,1
+addi $a0,$s3,0
+syscall
