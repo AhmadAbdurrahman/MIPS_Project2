@@ -148,3 +148,8 @@ addi $v0,$v0, -1
 move $v1,  $a0
 addi $v1, $v1, -2
 jr $ra
+
+removeleadspace:
+li $t1,0
+li $t2,32
+li $t3,9
