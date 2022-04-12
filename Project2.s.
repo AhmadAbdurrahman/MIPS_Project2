@@ -170,3 +170,8 @@ return1:
 move $v0,$a1
 sub $s1,$s1,$t1
 jr $ra
+
+removeendspace:
+li $t1,0
+li $t2,32
+li $t3,9
