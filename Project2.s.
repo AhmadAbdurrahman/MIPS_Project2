@@ -153,3 +153,10 @@ removeleadspace:
 li $t1,0
 li $t2,32
 li $t3,9
+
+loop2:
+lb $t0,0($a1)
+beq $t0,$t2,blankspace
+beq $t0,$t3,blankspace
+beq $t0,$a0,invalidchars
+j return1
