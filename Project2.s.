@@ -165,3 +165,8 @@ blankspace:
 addi $a1,$a1,1
 addi $t1,$t1,1
 j loop2;
+
+return1:
+move $v0,$a1
+sub $s1,$s1,$t1
+jr $ra
