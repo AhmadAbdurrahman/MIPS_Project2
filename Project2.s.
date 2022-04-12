@@ -175,3 +175,10 @@ removeendspace:
 li $t1,0
 li $t2,32
 li $t3,9
+
+loop3:
+beq $t1,$a1, return2
+lb $t0,0($a0)
+beq $t0,$t2, blankspace2
+beq $t0,$t3, blankspace2
+j return2
