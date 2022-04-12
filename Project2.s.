@@ -187,3 +187,8 @@ blankspace2:
 addi $a0,$a0, -1
 addi $t1,$t1, 1
 j loop3
+
+return2:
+move $v0,$a0
+sub $s1,$s1,$t1
+jr $ra
